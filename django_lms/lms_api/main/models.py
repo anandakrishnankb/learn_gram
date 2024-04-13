@@ -14,7 +14,7 @@ class Teacher(models.Model):
     class Meta:
         verbose_name_plural = '1.Teachers'
     
-    
+        
 #Course Category Model
 class CourseCategory(models.Model):
     title = models.CharField(max_length=150)

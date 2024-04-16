@@ -19,7 +19,7 @@ export default function CourseDetail() {
             jsx-a11y/anchor-is-valid
           </p>
           <p className="fw-bold">
-            Course By:<a href="#">Teacher 1</a>
+            Course By:<Link to="/teacher-detail/1">Teacher 1</Link>
           </p>
           <p className="fw-bold">Duration:3 hours</p>
           <p className="fw-bold">Enrolled Students:334</p>

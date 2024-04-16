@@ -3,9 +3,10 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Routes as Switch, Route } from "react-router-dom";
 import About from "./About";
+import CourseDetail from "./CourseDetail";
+import TeacherDetail from "./TeacherDetail";
 
 // User Imports
-import CourseDetail from "./CourseDetail";
 import Login from "./User/Login";
 import Register from "./User/Register";
 import Dashboard from "./User/Dashboard";
@@ -35,6 +36,7 @@ function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/detail/:course_id" element={<CourseDetail />} />
+        <Route path="/teacher-detail/:teacher_id" element={<TeacherDetail />} />
 
 {/* Users */}
 

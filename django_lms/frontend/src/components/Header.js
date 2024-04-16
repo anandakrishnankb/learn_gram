@@ -56,7 +56,7 @@ export default function Header() {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><Link class="dropdown-item" to="user-dashboard">Dashboard</Link></li>
                   <li><a class="dropdown-item" href="#">Logout</a></li>
                 </ul>
               </li>

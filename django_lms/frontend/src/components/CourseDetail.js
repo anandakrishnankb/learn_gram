@@ -6,9 +6,9 @@ export default function CourseDetail() {
     <div className="container mt-3">
       <div className="row">
         <div className="col-4 ">
-          <img src="/logo512.png" className="thumbnail" alt="course_image" />
+          <img src="/logo192.png" className="thumbnail" alt="course_image" />
         </div>
-        <div className="col-8 ">
+        <div className="col-8">
           <h3>Course Title</h3>
           <p>
             The href attribute requires a valid value to be accessible. Provide
@@ -30,23 +30,27 @@ export default function CourseDetail() {
       <div className="card mt-4">
         <h5 className="card-header">Course Videos</h5>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">
+          <li className="list-group-item ">
             Introduction
-            <button className="btn btn-sm btn-danger  float-end">
-              Play Video<i class="bi bi-play-fill"></i>
-            </button>
+            <span className="float-end">
+              <span className="me-5">1 Hour 30 Minutes</span>
+              <button className="btn btn-sm btn-danger  ">
+                Play Video<i class="bi bi-play-fill"></i>
+              </button>
+            </span>
           </li>
-          <li className="list-group-item">
-            Setup Project
-            <button className="btn btn-sm btn-danger  float-end">
-              Play Video<i class="bi bi-play-fill"></i>
-            </button>
+          <li className="list-group-item ">
+            Introduction
+            <span className="float-end">
+              <span className="me-5">1 Hour 30 Minutes</span>
+              <button className="btn btn-sm btn-danger  ">
+                Play Video<i class="bi bi-play-fill"></i>
+              </button>
+            </span>
           </li>
         </ul>
       </div>
-      <h3 className=" pb-1 mb-4 mt-5">
-        Related Courses{" "}
-      </h3>
+      <h3 className=" pb-1 mb-4 mt-5">Related Courses </h3>
       <div className="row">
         <div className="col-md-3">
           <div className="card">

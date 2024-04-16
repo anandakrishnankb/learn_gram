@@ -29,10 +29,43 @@ export default function Header() {
               <a className="nav-link" href="#">
                 Courses
               </a>
-              <a className="nav-link" href="#">
-                Teachers
-              </a>
-              <li class="nav-item dropdown">
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Teacher
+                </a>
+                <ul className="dropdown-menu">
+                  <li>
+                    <Link className="dropdown-item" to="/teacher-login">
+                      Login
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/teacher-register">
+                      Register
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="teacher-dashboard">
+                      Dashboard
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/teacher-logout">
+                      Logout
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -56,8 +89,16 @@ export default function Header() {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  <li><Link class="dropdown-item" to="user-dashboard">Dashboard</Link></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                  <li>
+                    <Link class="dropdown-item" to="user-dashboard">
+                      Dashboard
+                    </Link>
+                  </li>
+                  <li>
+                    <Link class="dropdown-item" to="/user-logout">
+                      Logout
+                    </Link>
+                  </li>
                 </ul>
               </li>
             </div>

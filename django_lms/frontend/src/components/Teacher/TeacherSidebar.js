@@ -1,42 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
-export default function Sidebar() {
+export default function TeacherSidebar() {
   return (
     <div className="card">
       <h5 className="card-header">Dashboard</h5>
       <div className="list-group list-group-flush">
-        {/* <Link to="/user-dashboard" className="list-group-item list-group-item-action">
+        {/* <Link to="/teacher-dashboard" className="list-group-item list-group-item-action">
          Dashboard
         </Link> */}
-        <Link to="/my-courses" className="list-group-item list-group-item-action">
+        <Link to="/teacher-my-courses" className="list-group-item list-group-item-action">
           My Courses
         </Link>
-        <Link
-          to="/favourite-courses"
-          className="list-group-item list-group-item-action"
-        >
-          Favourite Courses
+        <Link to="/add-courses" className="list-group-item list-group-item-action">
+          Add Courses
         </Link>
-        <Link
-          to="/recommended-courses"
-          className="list-group-item list-group-item-action"
-        >
-          Recommended Courses
+        <Link to="/my-students" className="list-group-item list-group-item-action">
+          My Students
         </Link>
+       
         <Link
-          to="/profile-setting"
+          to="/teacher-profile-setting"
           className="list-group-item list-group-item-action"
         >
           Profile Settings
         </Link>
         <Link
-          to="/change-password"
+          to="/teacher-change-password"
           className="list-group-item list-group-item-action"
         >
           Change Password
         </Link>
         <Link
-          to="/user-login"
+          to="/teacher-login"
           className="list-group-item list-group-item-action text-danger"
         >
           Logout

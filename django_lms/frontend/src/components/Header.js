@@ -1,13 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <Link to="/" className="navbar-brand">
             LearnGram
-          </a>
+          </Link>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -21,15 +23,18 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
+              </Link>
               <a className="nav-link" href="#">
                 Courses
               </a>
               <a className="nav-link" href="#">
                 Teachers
               </a>
+              <Link className="nav-link" to="/about">
+                About Us
+              </Link>
             </div>
           </div>
         </div>

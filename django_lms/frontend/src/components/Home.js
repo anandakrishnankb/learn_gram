@@ -65,9 +65,9 @@ function Home() {
       {/* Popular Courses*/}
       <h3 className=" pb-1 mb-4 mt-5">
         Popular Courses
-        <a href="#" className="float-end">
+        <Link to="/all-popular-courses" className="float-end">
           See All
-        </a>
+        </Link>
       </h3>
       <div className="row">
         <div className="col-md-3">
@@ -79,6 +79,12 @@ function Home() {
               <h5 className="card-title">
                 <a href="#"> Course title</a>
               </h5>
+              <div className="card-footer">
+                <div className="title">
+                  <span>Rating: 4/5</span>
+                  <span className="float-end">Views: 3,12,47</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -91,6 +97,12 @@ function Home() {
               <h5 className="card-title">
                 <a href="#"> Course title</a>
               </h5>
+              <div className="card-footer">
+                <div className="title">
+                  <span>Rating: 4/5</span>
+                  <span className="float-end">Views: 3,12,47</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -103,6 +115,12 @@ function Home() {
               <h5 className="card-title">
                 <a href="#"> Course title</a>
               </h5>
+              <div className="card-footer">
+                <div className="title">
+                  <span>Rating: 4/5</span>
+                  <span className="float-end">Views: 3,12,47</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,6 +133,12 @@ function Home() {
               <h5 className="card-title">
                 <a href="#"> Course title</a>
               </h5>
+              <div className="card-footer">
+                <div className="title">
+                  <span>Rating: 4/5</span>
+                  <span className="float-end">Views: 3,12,47</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -123,9 +147,9 @@ function Home() {
       {/* Popular Teachers*/}
       <h3 className=" pb-1 mb-4 mt-5">
         Popular Teachers
-        <a href="#" className="float-end">
+        <Link to="/all-popular-teachers" className="float-end">
           See All
-        </a>
+        </Link>
       </h3>
       <div className="row">
         <div className="col-md-3">
@@ -135,8 +159,13 @@ function Home() {
             </a>
             <div className="card-body">
               <h5 className="card-title">
-                <a href="#"> Teacher Name</a>
+                <Link to="/teacher-detail/1"> Teacher Name</Link>
               </h5>
+            </div>
+            <div className="card-footer">
+              <div className="title">
+                <span>Rating: 4/5</span>
+              </div>
             </div>
           </div>
         </div>
@@ -147,8 +176,13 @@ function Home() {
             </a>
             <div className="card-body">
               <h5 className="card-title">
-                <a href="#"> Teacher Name</a>
+                <Link to="/teacher-detail/1"> Teacher Name</Link>
               </h5>
+            </div>
+            <div className="card-footer">
+              <div className="title">
+                <span>Rating: 4/5</span>
+              </div>
             </div>
           </div>
         </div>
@@ -159,8 +193,13 @@ function Home() {
             </a>
             <div className="card-body">
               <h5 className="card-title">
-                <a href="#"> Teacher Name</a>
+                <Link to="/teacher-detail/1"> Teacher Name</Link>
               </h5>
+            </div>
+            <div className="card-footer">
+              <div className="title">
+                <span>Rating: 4/5</span>
+              </div>
             </div>
           </div>
         </div>
@@ -171,8 +210,13 @@ function Home() {
             </a>
             <div className="card-body">
               <h5 className="card-title">
-                <a href="#"> Teacher Name</a>
+                <Link to="/teacher-detail/1"> Teacher Name</Link>
               </h5>
+            </div>
+            <div className="card-footer">
+              <div className="title">
+                <span>Rating: 4/5</span>
+              </div>
             </div>
           </div>
         </div>

@@ -18,9 +18,13 @@ export default function TeacherDetail() {
             jsx-a11y/anchor-is-valid
           </p>
           <p className="fw-bold">
-             Skills:<Link to="/teacher-detail/1">Java</Link>,<Link to="/teacher-detail/1">C++</Link>,<Link to="/teacher-detail/1">Python</Link>
+            Skills:<Link to="/category/php">Java</Link>,
+            <Link to="/category/php">C++</Link>,
+            <Link to="/category/php">Python</Link>
           </p>
-          <p className="fw-bold">Recent Course:<Link to="/teacher-detail/1">Web Development</Link></p>
+          <p className="fw-bold">
+            Recent Course:<Link to="/teacher-detail/1">Web Development</Link>
+          </p>
           <p className="fw-bold">Course Rating:4/5</p>
         </div>
       </div>
@@ -28,11 +32,30 @@ export default function TeacherDetail() {
       <div className="card mt-4">
         <h5 className="card-header">Course List</h5>
         <div className="list-group list-group-flush">
-            <Link to="/detail/1" className="list-group-item list-group-item-action">Course 2</Link>
-            <Link to="/detail/1" className="list-group-item list-group-item-action">Course 3</Link>
-            <Link to="/detail/1" className="list-group-item list-group-item-action">Course 1</Link>
-            <Link to="/detail/1" className="list-group-item list-group-item-action">Course 4</Link>
-        
+          <Link
+            to="/detail/1"
+            className="list-group-item list-group-item-action"
+          >
+            Course 2
+          </Link>
+          <Link
+            to="/detail/1"
+            className="list-group-item list-group-item-action"
+          >
+            Course 3
+          </Link>
+          <Link
+            to="/detail/1"
+            className="list-group-item list-group-item-action"
+          >
+            Course 1
+          </Link>
+          <Link
+            to="/detail/1"
+            className="list-group-item list-group-item-action"
+          >
+            Course 4
+          </Link>
         </div>
       </div>
     </div>

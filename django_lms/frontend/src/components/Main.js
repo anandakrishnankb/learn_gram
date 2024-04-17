@@ -29,6 +29,10 @@ import TeacherChangePassword from "./Teacher/TeacherChangePassword";
 
 // List Pages
 import AllCourses from "./AllCourses";
+import AllPopularCourses from "./AllPopularCourses";
+import AllPopularTeachers from "./AllPopularTeachers";
+import CategoryCourses from "./CategoryCourses";
+
 
 function Main() {
   return (
@@ -65,6 +69,9 @@ function Main() {
 
 {/* List Pages */}
 <Route path="/all-courses" element={<AllCourses />} />
+<Route path="/all-popular-courses" element={<AllPopularCourses />} />
+<Route path="/all-popular-teachers" element={<AllPopularTeachers />} />
+<Route path="/category/:category_slug" element={<CategoryCourses />} />
 
       </Switch>
       <Footer />

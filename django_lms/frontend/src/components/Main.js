@@ -27,6 +27,9 @@ import TeacherAddCourses from "./Teacher/TeacherAddCourses";
 import TeacherMyStudent from "./Teacher/TeacherMyStudent";
 import TeacherChangePassword from "./Teacher/TeacherChangePassword";
 
+// List Pages
+import AllCourses from "./AllCourses";
+
 function Main() {
   return (
     <div className="App">
@@ -58,6 +61,10 @@ function Main() {
         <Route path="/my-students" element={<TeacherMyStudent />} />
         <Route path="/add-courses" element={<TeacherAddCourses />} />
         <Route path="/teacher-my-courses" element={<TeacherMyCourses />} />
+
+
+{/* List Pages */}
+<Route path="/all-courses" element={<AllCourses />} />
 
       </Switch>
       <Footer />

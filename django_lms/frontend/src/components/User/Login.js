@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import React from "react";
-
+import { useEffect } from "react";
 export default function Login() {
+  useEffect(()=>{
+    document.title = 'Student Login'
+  },[])
   return (
     <div className="container mt-4">
       <div className="row">

@@ -1,6 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
+
 
 export default function TeacherRegister() {
+  useEffect(()=>{
+    document.title = 'Teacher Registration'
+  },[])
   return (
     <div className="container mt-4">
       <div className="row">
@@ -14,7 +19,7 @@ export default function TeacherRegister() {
                     Full Name
                   </label>
                   <input
-                    type="email"
+                    type="text"
                     className="form-control"
                     id="exampleInputEmail1"
                     aria-describedby="emailHelp"
@@ -31,14 +36,34 @@ export default function TeacherRegister() {
                     aria-describedby="emailHelp"
                   />
                 </div>
+                <label for="exampleInputPassword1" className="form-label">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  className="form-control"
+                  id="exampleInputPassword1"
+                />{" "}
                 <div className="mb-3">
-                  <label for="exampleInputPassword1" className="form-label">
-                    Password
+                  <label for="exampleInputEmail1" className="form-label">
+                    Qualifcations
                   </label>
                   <input
-                    type="password"
+                    type="text"
                     className="form-control"
-                    id="exampleInputPassword1"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
+                <div className="mb-3">
+                  <label for="exampleInputEmail1" className="form-label">
+                    Mobile Number
+                  </label>
+                  <input
+                    type="number"
+                    className="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
                   />
                 </div>
                 <div className="mb-3">
@@ -50,7 +75,6 @@ export default function TeacherRegister() {
                     Programming Languages, Software Domain etc..
                   </div>
                 </div>
-
                 <button type="submit" className="btn btn-primary">
                   Register
                 </button>

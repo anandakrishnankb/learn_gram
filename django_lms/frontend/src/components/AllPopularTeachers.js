@@ -1,6 +1,22 @@
-import React from "react";
+import React ,{ useEffect, useState }from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
+
+const baseUrl = 'http://127.0.0.1:8000/api'
 export default function AllPopularTeachers() {
+useEffect(() => {
+  document.title = "Popular Teaches";
+}, []);
+
+const [teacher, setTeacher] = useState(null);
+useEffect(() => {
+  axios.get(baseUrl + "/teacher/", {
+    headers: {
+      Authorization: 'Token 88fff77f4f250cf1f58e7e6c059e58e583d36dc4'
+    }}).then((response) => {
+    console.log(response.data);
+  });
+}, []);
   return (
     <div className="container mt-3">
       {/* Popular Teachers*/}

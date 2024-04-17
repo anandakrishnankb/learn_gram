@@ -1,6 +1,9 @@
 import React from "react";
-
+import { useEffect } from "react";
 export default function TeacherLogin() {
+  useEffect(()=>{
+    document.title = 'Teacher Login'
+  },[])
   return (
     <div className="container mt-4">
       <div className="row">

@@ -4,7 +4,7 @@ from . import models
 class TeacherSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Teacher
-        fields = ['id', 'full_name', 'email', 'qualification', 'mobile_no', 'address']
+        fields = ['id', 'full_name', 'email', 'qualification', 'mobile_no', 'skills']
 
 # class CourseCategorySerializer(serializers.ModelSerializer):
 #     class Meta:

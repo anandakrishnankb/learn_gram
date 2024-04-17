@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import React from "react";
-
+import { useEffect } from "react";
 export default function Register() {
+  useEffect(()=>{
+    document.title = 'Student Registration'
+  },[])
   return (
     <div className="container mt-4">
       <div className="row">
